@@ -1,5 +1,3 @@
-# PythoniC
-
 ### Run
 * PythoniC/BOOTLOADER/PythoniC.cmd
 
