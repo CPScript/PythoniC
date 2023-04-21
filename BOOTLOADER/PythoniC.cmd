@@ -1,12 +1,12 @@
 @echo off
 cls
-color 0b
-Title CRYLINE COMPILER
+color 5b
+Title PythoniC
 
-echo --------------- CRYLINE PROJECT ---------------
-echo                 # Version 5.0 #
-echo                    by DarxiS
-echo -----------------------------------------------
+echo --------------  PythoniCryptor  -------------
+echo                --_/\/\/\/\/\/\D> 
+echo               Ransomware compiler
+echo ---------------------------------------------
 
 echo ### COMPILE PROCESS ###
 del BIN\encryptLoader.bin
@@ -27,5 +27,5 @@ TOOLS\DD\dd.exe if=BIN\bannerKernel.bin of=TEST_DISK\disk.img bs=512 seek=1
 
 echo ### START VIRTUAL SYSTEM ###
 cd C:\Program Files\qemu\
-qemu-system-x86_64w.exe -boot c -vga cirrus -m 18 -L vgabios-stdvga -boot menu=off -hda "C:\Users\breke\Desktop\CRYLINE v5.0\BOOTLOADER\TEST_DISK\disk.img" -rtc base=localtime,clock=host
+qemu-system-x86_64w.exe -boot c -vga cirrus -m 18 -L vgabios-stdvga -boot menu=off -hda "C:\Users\breke\Desktop\PythoniC\BOOTLOADER\TEST_DISK\disk.img" -rtc base=localtime,clock=host
 exit
